@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneHub - Premium Smartphones Store</title>
+    
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors/color-1.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- In header -->
+<a href="#" class="nav__logo">
+    <img src="assets/img/phone hub.png" alt="PhoneHub" class="nav__logo-img">
+</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#shop" class="nav__link">Shop</a></li>
+                    <li class="nav__item"><a href="#deals" class="nav__link">Deals</a></li>
+                    <li class="nav__item"><a href="#brands" class="nav__link">Brands</a></li>
+                    <li class="nav__item"><a href="#accessories" class="nav__link">Accessories</a></li>
+                    <li class="nav__item"><a href="#faq" class="nav__link">FAQ's</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+                
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span class="cart__count">0</span>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart -->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+        <h2 class="cart__title-center">Your Cart</h2>
+        
+        <div class="cart__container" id="cart-container">
+            <!-- Cart items will be dynamically inserted here -->
+            <div class="cart__empty">
+                <i class="bx bx-cart-download"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        
+        <div class="cart__prices">
+            <span class="cart__prices-item">0 items</span>
+            <span class="cart__prices-total">$0.00</span>
+        </div>
+        
+        <div class="cart__buttons">
+            <a href="#" class="button button--gray" id="view-cart">View Cart</a>
+            <a href="#" class="button" id="checkout">Checkout</a>
+        </div>
+    </div>
+
+    <!-- Login -->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-center">Login</h2>
+        
+        <form class="login__form grid">
+            <div class="login__content">
+                <label class="login__label">Email</label>
+                <input type="email" class="login__input" required>
+            </div>
+            
+            <div class="login__content">
+                <label class="login__label">Password</label>
+                <input type="password" class="login__input" required>
+            </div>
+            
+            <div>
+                <button type="submit" class="button">Sign In</button>
+            </div>
+            
+            <div>
+                <p class="signup">Not a member? <a href="registration.html">Sign up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home container" id="home">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/iPhone_16_Pro_Max_-_KalPay_-5380248-removebg-preview.png" alt="iPhone 16 Pro" class="home__img">
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">iPhone 16 Pro</h4>
+                                    <span class="home__details-subtitle">Titanium Design</span>
+                                </div>
+                            </div>
+                            
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#1 FLAGSHIP PHONE</h3>
+                                <h1 class="home__title">TAKE-ORDER <br>NOW<br>GET AIRPODS FREE</h1>
+                                <p class="home__description">Experience the future of mobile technology with the all-new iPhone 16 Pro featuring A18 Pro chip and revolutionary camera system.</p>
+                                <div class="home__buttons">
+                                    <a href="#shop" class="button">Shop Now</a>
+                                    <a href="#shop" class="button--link button--flex">View Collection <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Slide 2 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/samsung_galaxy_s25_ultra_titanium_silverblue_1-removebg-preview.png" alt="Samsung S25 Ultra" class="home__img">
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Galaxy S25 Ultra</h4>
+                                    <span class="home__details-subtitle">200MP Camera</span>
+                                </div>
+                            </div>
+                            
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#2 TOP ANDROID</h3>
+                                <h1 class="home__title">GALAXY <br>S25 ULTRA<br>NOW AVAILABLE</h1>
+                                <p class="home__description">The most powerful Galaxy yet with Snapdragon 8 Gen 4, 200MP camera, and built-in S Pen for ultimate productivity.</p>
+                                <div class="home__buttons">
+                                    <a href="#shop" class="button">Shop Now</a>
+                                    <a href="#shop" class="button--link button--flex">View Collection <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--slide 3-->
+
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/eee78001e83f4712afbd3b39aee56791-removebg-preview.png" alt="iPhone 16 Pro" class="home__img">
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Google Pixel 9 Pro Xl</h4>
+                                    <span class="home__details-subtitle">Future Mobile Phone</span>
+                                </div>
+                            </div>
+                            
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#1 AI PHONE</h3>
+                                <h1 class="home__title">TAKE-ORDER <br>NOW<br>GET PIXELBUDS FREE</h1>
+                                <p class="home__description">Google Gemini Ai features and Pure Android experience with industry-leading computational photography.</p>
+                                <div class="home__buttons">
+                                    <a href="#shop" class="button">Shop Now</a>
+                                    <a href="#shop" class="button--link button--flex">View Collection <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Discount Section -->
+        <section class="discount section">
+            <div class="discount__container container grid">
+                <img src="assets/img/P9P9PThumbnail_16x9_Opt2_2.width-1300-removebg-preview.png" alt="Google Pixel 9" class="discount__img">
+                <div class="discount__data">
+                    <h2 class="discount__title">Pixel 9 Pro <br> Get-order Bonus</h2>
+                    <p class="discount__description">Get Pixel Buds Pro free with every Pixel 9 Pro place-order</p>
+                    <a href="#shop" class="button">Place-order Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section class="new section" id="shop">
+            <h2 class="section__title">Latest Models</h2>
+            
+            <div class="new__container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Product 1 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/iPhone-16-Ultramarine-removebg-preview.png" alt="iPhone 16" class="new__img">
+                            <h3 class="new__title">iPhone 16</h3>
+                            <span class="new__subtitle">A18 Bionic Chip</span>
+                            <div class="new__prices">
+                                <span class="new__price">$799.99</span>
+                                <span class="new__discount">$899.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="iph16" data-name="iPhone 16" data-price="799.99" data-img="assets/img/iPhone-16-Ultramarine-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Product 2 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/S25_Icyblue_Hero_P1.webp" alt="Samsung S25" class="new__img">
+                            <h3 class="new__title">Samsung S25</h3>
+                            <span class="new__subtitle">Snapdragon 8 Gen 4</span>
+                            <div class="new__prices">
+                                <span class="new__price">$999.99</span>
+                                <span class="new__discount">$1,099.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="sams25" data-name="Samsung S25" data-price="999.99" data-img="assets/img/S25_Icyblue_Hero_P1.webp">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Product 3 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/y9gss_512-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Pixel 9 Pro</h3>
+                            <span class="new__subtitle">Tensor G4</span>
+                            <div class="new__prices">
+                                <span class="new__price">$899.99</span>
+                                <span class="new__discount">$999.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Google Pixel 9 Pro" data-price="899.99" data-img="assets/img/y9gss_512-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 4 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/Google-Pixel-9-ggg-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Pixel 9 </h3>
+                            <span class="new__subtitle">Tensor G4</span>
+                            <div class="new__prices">
+                                <span class="new__price">$799.99</span>
+                                <span class="new__discount">$899.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Google Pixel 9 " data-price="799.99" data-img="assets/img/Google-Pixel-9-ggg-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 5 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/device-thumbnail-400x600-att_pa3_titaniumblack_lockup-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Samsung Galaxy S25 Ultra</h3>
+                            <span class="new__subtitle">Snapdragon 8 Gen 4</span>
+                            <div class="new__prices">
+                                <span class="new__price">$1199.99</span>
+                                <span class="new__discount">$1299.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Samsung Galaxy S25 Ultra" data-price="1199.99" data-img="assets/img/device-thumbnail-400x600-att_pa3_titaniumblack_lockup-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 6 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/Apple-iPhone-16-Pro-hero-240909-lp.jpg.news_app_ed-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Iphone 16 Pro Max</h3>
+                            <span class="new__subtitle">A18 Pro</span>
+                            <div class="new__prices">
+                                <span class="new__price">$1099.99</span>
+                                <span class="new__discount">$1199.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Iphone 16 Pro Max" data-price="1099.99" data-img="assets/img/Apple-iPhone-16-Pro-hero-240909-lp.jpg.news_app_ed-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 7 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/Google-Pixel-9-Pro-Fold-16GB-RAM-256GB-1-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Pixel 9 Pro Fold</h3>
+                            <span class="new__subtitle">Tensor G4</span>
+                            <div class="new__prices">
+                                <span class="new__price">$1899.99</span>
+                                <span class="new__discount">$1999.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Google Pixel 9 Pro Fold" data-price="1899.99" data-img="assets/img/Google-Pixel-9-Pro-Fold-16GB-RAM-256GB-1-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 8 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/air5pnk-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Apple Ipad Pro</h3>
+                            <span class="new__subtitle">A18 Pro</span>
+                            <div class="new__prices">
+                                <span class="new__price">$999.99</span>
+                                <span class="new__discount">$1099.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Apple Ipad Pro" data-price="999.99" data-img="assets/img/air5pnk-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 9 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/fold6_silver-shadow-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Samsung Galaxy Z Fold 7</h3>
+                            <span class="new__subtitle"></span>
+                            <div class="new__prices">
+                                <span class="new__price">$2499.99</span>
+                                <span class="new__discount">$2599.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Samsung Galaxy Z Fold 7" data-price="2499.99" data-img="assets/img/fold6_silver-shadow-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 10 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/Google-Pixel-9a-1-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Pixel 9a</h3>
+                            <span class="new__subtitle">Tensor G4</span>
+                            <div class="new__prices">
+                                <span class="new__price">$799.99</span>
+                                <span class="new__discount">$899.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Google Pixel 9a" data-price="799.99" data-img="assets/img/Google-Pixel-9a-1-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 11 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/samsung-galaxy-z-flip-7-foldable-phone-design_optimized-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Samsung Galaxy Z Flip 7</h3>
+                            <span class="new__subtitle">Tensor G4</span>
+                            <div class="new__prices">
+                                <span class="new__price">$899.99</span>
+                                <span class="new__discount">$999.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Samsung Galaxy Z Flip 7" data-price="899.99" data-img="assets/img/samsung-galaxy-z-flip-7-foldable-phone-design_optimized-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 12 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/s-l1200-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Google Pixel Tab Pro</h3>
+                            <span class="new__subtitle">Tensor G4</span>
+                            <div class="new__prices">
+                                <span class="new__price">$279.99</span>
+                                <span class="new__discount">$379.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Google Pixel Tab Pro" data-price="279.99" data-img="assets/img/s-l1200-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 13 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/iPhone_15_Pink_PDP_Image_Position-1__en-IN-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Iphone 15</h3>
+                            <span class="new__subtitle">A17</span>
+                            <div class="new__prices">
+                                <span class="new__price">$899.99</span>
+                                <span class="new__discount">$999.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Iphone 15" data-price="899.99" data-img="assets/img/iPhone_15_Pink_PDP_Image_Position-1__en-IN-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 14 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/OnePlus_12-500x500-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">One Plus 12</h3>
+                            <span class="new__subtitle">Snapdragon 8 Gen3</span>
+                            <div class="new__prices">
+                                <span class="new__price">$729.99</span>
+                                <span class="new__discount">$629.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="One Plus 12" data-price="899.99" data-img="assets/img/OnePlus_12-500x500-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 15 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/Xiaomi-14-Ultra_Yoast-image-packshot-review-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Xiaomi 14 Ultra</h3>
+                            <span class="new__subtitle">Snapdragon 8 Gen3</span>
+                            <div class="new__prices">
+                                <span class="new__price">$1220.99</span>
+                                <span class="new__discount">$1320.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Xiaomi 14 Ultra" data-price="899.99" data-img="assets/img/Xiaomi-14-Ultra_Yoast-image-packshot-review-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                         <!-- Product 16 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/Google-Pixel-8-Pro-12GB-RAM-128GB-price-in-sri-lanka-removebg-preview.png" alt="Google Pixel 9 Pro" class="new__img">
+                            <h3 class="new__title">Pixel 8 Pro</h3>
+                            <span class="new__subtitle">Tensor G3</span>
+                            <div class="new__prices">
+                                <span class="new__price">$699.99</span>
+                                <span class="new__discount">$799.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pix9p" data-name="Google Pixel 8 Pro" data-price="899.99" data-img="assets/img/Google-Pixel-8-Pro-12GB-RAM-128GB-price-in-sri-lanka-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section class="steps section container" id="brands">
+            <div class="steps__bg">
+                <h2 class="section__title">Our Brands</h2>
+                <div class="steps__container grid">
+                    <div class="steps__card">
+                        <div class="steps__card-number"><i class="bx bxl-apple"></i></div>
+                        <h3 class="steps__card-title">Apple</h3>
+                        <p class="steps__card-description">Latest iPhone models with cutting-edge technology and premium design.</p>
+                    </div>
+                    
+                    <div class="steps__card">
+                        <div class="steps__card-number"><i class="bx bxl-android"></i></div>
+                        <h3 class="steps__card-title">Samsung</h3>
+                        <p class="steps__card-description">Innovative Galaxy series with top-tier displays and camera systems.</p>
+                    </div>
+                    
+                    <div class="steps__card">
+                        <div class="steps__card-number"><i class="bx bxl-google"></i></div>
+                        <h3 class="steps__card-title">Google</h3>
+                        <p class="steps__card-description">Pure Android experience with industry-leading computational photography.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deals Section -->
+        <section class="blog section container" id="deals">
+            <h2 class="section__title">Hot Deals</h2>
+            <div class="blog__container grid">
+                <article class="blog__post">
+                    <img src="assets/img/00-removebg-preview.png" alt="OnePlus 12 Deal" class="blog__img">
+                    <div class="blog__content">
+                        <h3 class="blog__title">OnePlus 12</h3>
+                        <p class="blog__description">Get $200 off the OnePlus 12 with trade-in. Limited time offer.</p>
+                        <a href="#shop" class="blog__button">Shop Now</a>
+                    </div>
+                </article>
+                
+                <article class="blog__post">
+                    <img src="assets/img/Xiaomi-14-Ultra_Yoast-image-packshot-review-removebg-preview.png" alt="Xiaomi 14 Deal" class="blog__img">
+                    <div class="blog__content">
+                        <h3 class="blog__title">Xiaomi 14 Ultra</h3>
+                        <p class="blog__description">Free wireless charger with every Xiaomi 14 Ultra purchase.</p>
+                        <a href="#shop" class="blog__button">Shop Now</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Accessories Section -->
+        <section class="new section" id="accessories">
+            <h2 class="section__title">Premium Accessories</h2>
+            
+            <div class="new__container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Accessory 1 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Best Seller</div>
+                            <img src="assets/img/111851_sp880-airpods-Pro-2nd-gen.png" alt="AirPods Pro 2" class="new__img">
+                            <h3 class="new__title">AirPods Pro 2</h3>
+                            <span class="new__subtitle">Active Noise Cancellation</span>
+                            <div class="new__prices">
+                                <span class="new__price">$199.99</span>
+                                <span class="new__discount">$249.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="airpp2" data-name="AirPods Pro 2" data-price="199.99" data-img="assets/img/airpods-pro-2.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Accessory 2 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/Samsung-Galaxy-Watch-6-40MM-1-removebg-preview.png" alt="Galaxy Watch 6" class="new__img">
+                            <h3 class="new__title">Galaxy Watch 6</h3>
+                            <span class="new__subtitle">Advanced Health Tracking</span>
+                            <div class="new__prices">
+                                <span class="new__price">$249.99</span>
+                                <span class="new__discount">$299.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="gw6" data-name="Galaxy Watch 6" data-price="249.99" data-img="assets/img/galaxy-watch6.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Accessory 3 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Popular</div>
+                            <img src="assets/img/img_9276-removebg-preview.png" alt="Pixel Watch 2" class="new__img">
+                            <h3 class="new__title">Samsung Buds 3 Pro</h3>
+                            <span class="new__subtitle">Wow Sound</span>
+                            <div class="new__prices">
+                                <span class="new__price">$299.99</span>
+                                <span class="new__discount">$349.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pw2" data-name="Samsung Buds 3 Pro" data-price="299.99" data-img="assets/img/img_9276-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                        <!-- Accessory 4 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Popular</div>
+                            <img src="assets/img/images__2_-removebg-preview.png" alt="Pixel Watch 2" class="new__img">
+                            <h3 class="new__title">Pixel Watch 2</h3>
+                            <span class="new__subtitle">Fitbit Integration</span>
+                            <div class="new__prices">
+                                <span class="new__price">$299.99</span>
+                                <span class="new__discount">$349.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pw2" data-name="Pixel Watch 2" data-price="299.99" data-img="assets/img/images__2_-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                        <!-- Accessory 5 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Popular</div>
+                            <img src="assets/img/81ww2VPQbmL-removebg-preview.png" alt="Pixel Watch 2" class="new__img">
+                            <h3 class="new__title">Galaxy S25 Ultra Phone Case </h3>
+                            <span class="new__subtitle">Protect Your Device</span>
+                            <div class="new__prices">
+                                <span class="new__price">$299.99</span>
+                                <span class="new__discount">$349.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pw2" data-name="Galaxy S25 Ultra Phone Case" data-price="299.99" data-img="assets/img/81ww2VPQbmL-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                        <!-- Accessory 6 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Popular</div>
+                            <img src="assets/img/Pixel-Buds-Pro-2-removebg-preview.png" alt="Pixel Watch 2" class="new__img">
+                            <h3 class="new__title">Pixel Buds Pro 2</h3>
+                            <span class="new__subtitle">Comfortable Earbuds</span>
+                            <div class="new__prices">
+                                <span class="new__price">$299.99</span>
+                                <span class="new__discount">$349.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pw2" data-name="Pixel Buds Pro 2" data-price="299.99" data-img="assets/img/Pixel-Buds-Pro-2-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+
+                        <!-- Accessory 7 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Popular</div>
+                            <img src="assets/img/88305-producto-medidas-para-mercado-libre-2024-02-06t174637-611-removebg-preview.png" alt="Pixel Watch 2" class="new__img">
+                            <h3 class="new__title">Apple Vision Pro</h3>
+                            <span class="new__subtitle">Easy To Collaborate</span>
+                            <div class="new__prices">
+                                <span class="new__price">$3499.99</span>
+                                <span class="new__discount">$3599.99</span>
+                            </div>
+                            <button class="button new__button add-to-cart" data-id="pw2" data-name="Apple Vision Pro" data-price="3499.99" data-img="assets/img/88305-producto-medidas-para-mercado-libre-2024-02-06t174637-611-removebg-preview.png">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq section container" id="faq">
+            <h2 class="section__title">Frequently Asked Questions</h2>
+            <div class="faq__container grid">
+                <div class="faq__item">
+                    <header class="faq__header">
+                        <h3 class="faq__question">What is your return policy?</h3>
+                        <i class="bx bx-plus faq__icon"></i>
+                    </header>
+                    <div class="faq__content">
+                        <p class="faq__answer">We offer a 30-day return policy for all unused devices in their original packaging with all accessories included. Opened devices may be subject to a restocking fee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <header class="faq__header">
+                        <h3 class="faq__question">Do you offer international shipping?</h3>
+                        <i class="bx bx-plus faq__icon"></i>
+                    </header>
+                    <div class="faq__content">
+                        <p class="faq__answer">Yes, we ship to most countries worldwide. Shipping costs and delivery times vary by destination. Please check at checkout for details.</p>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <header class="faq__header">
+                        <h3 class="faq__question">Do you price match?</h3>
+                        <i class="bx bx-plus faq__icon"></i>
+                    </header>
+                    <div class="faq__content">
+                        <p class="faq__answer">We offer price matching for identical products from authorized retailers within 14 days of purchase. Contact our customer service with proof of the lower price.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section container" id="contact">
+            <h2 class="section__title">Contact Us</h2>
+            <div class="contact__container grid">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <i class="bx bx-map contact__icon"></i>
+                        <h3 class="contact__card-title">Address</h3>
+                        <p class="contact__card-data">17C,Siripura,Polonnaruwa</p>
+                    </div>
+                    
+                    <div class="contact__card">
+                        <i class="bx bx-phone contact__icon"></i>
+                        <h3 class="contact__card-title">Phone</h3>
+                        <p class="contact__card-data">+94 781 608 352</p>
+                    </div>
+                    
+                    <div class="contact__card">
+                        <i class="bx bx-envelope contact__icon"></i>
+                        <h3 class="contact__card-title">Email</h3>
+                        <p class="contact__card-data">support@phonehub.com</p>
+                    </div>
+                </div>
+                
+                <form action="" class="contact__form">
+                    <div class="contact__form-group">
+                        <input type="text" placeholder="Your Name" class="contact__form-input" required>
+                        <input type="email" placeholder="Your Email" class="contact__form-input" required>
+                    </div>
+                    <input type="text" placeholder="Subject" class="contact__form-input">
+                    <textarea placeholder="Your Message" class="contact__form-input contact__form-area" required></textarea>
+                    <button type="submit" class="button contact__button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter section">
+            <div class="newsletter__container container">
+                <h2 class="section__title">Our Newsletter</h2>
+                <p class="newsletter__description">Get the latest phone releases, exclusive deals, and tech news directly to your inbox.</p>
+                <form action="" class="newsletter__form">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input" required>
+                    <button class="button">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bx-mobile footer__logo-icon"></i> PhoneHub
+                </a>
+                <p class="footer__description">Your trusted source for the latest smartphones and accessories.</p>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/share/1CTL1Y7Y1x/" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/oshada_aravinda?igsh=b213ZXFxZnp1bmNu" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="https://x.com/AravindakumaraO" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.youtube.com/@oshadaaravindakumara4680" class="footer__social-link"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">Shop</h3>
+                <ul class="footer__links">
+                    <li><a href="#shop" class="footer__link">New Phones</a></li>
+                    <li><a href="#accessories" class="footer__link">Accessories</a></li>
+                    <li><a href="#deals" class="footer__link">Deals</a></li>
+                    <li><a href="#brands" class="footer__link">Brands</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">Support</h3>
+                <ul class="footer__links">
+                    <li><a href="#faq" class="footer__link">FAQs</a></li>
+                    <li><a href="#" class="footer__link">Shipping Policy</a></li>
+                    <li><a href="#" class="footer__link">Return Policy</a></li>
+                    <li><a href="#" class="footer__link">Warranty</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">Company</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                    <li><a href="#" class="footer__link">Careers</a></li>
+                    <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                    <li><a href="#contact" class="footer__link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <span class="footer__copy">&#169; Oshadha Aravinda. All rights reserved</span>
+    </footer>
+
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!-- Checkout Modal -->
+    <div class="checkout" id="checkout-modal">
+        <div class="checkout__container">
+            <i class="bx bx-x checkout__close" id="checkout-close"></i>
+            <h2 class="checkout__title">Complete Your Purchase</h2>
+            
+            <div class="checkout__summary">
+                <h3>Order Summary</h3>
+                <div class="checkout__items" id="checkout-items">
+                    <!-- Items will be inserted here -->
+                </div>
+                <div class="checkout__total">
+                    <span>Total:</span>
+                    <span id="checkout-total">$0.00</span>
+                </div>
+            </div>
+            
+            <form class="checkout__form" id="checkout-form">
+                <h3>Shipping Information</h3>
+                <div class="checkout__form-group">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <input type="text" placeholder="Address" required>
+                <div class="checkout__form-group">
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="Zip Code" required>
+                </div>
+                <select required>
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="US">Sri Lanka</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                </select>
+                
+                <div class="checkout__buttons">
+                    <button type="button" class="button button--gray" id="back-to-cart">Back to Cart</button>
+                    <button type="button" class="button" id="proceed-to-payment">Proceed to Payment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Payment Modal -->
+    <div class="payment" id="payment">
+        <div class="payment__container">
+            <i class="bx bx-x payment__close" id="payment-close"></i>
+            <h2 class="payment__title">Payment Information</h2>
+            
+            <form class="payment__form" id="payment-form">
+                <div class="payment__group">
+                    <label>Card Number</label>
+                    <input type="text" placeholder="1234 5678 9012 3456" required>
+                </div>
+                
+                <div class="payment__group">
+                    <label>Cardholder Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                
+                <div class="payment__row">
+                    <div class="payment__group">
+                        <label>Expiry Date</label>
+                        <input type="text" placeholder="MM/YY" required>
+                    </div>
+                    
+                    <div class="payment__group">
+                        <label>CVV</label>
+                        <input type="text" placeholder="123" required>
+                    </div>
+                </div>
+                
+                <div class="payment__summary">
+                    <h3>Order Summary</h3>
+                    <div id="payment-items"></div>
+                    <div class="payment__total">
+                        <span>Total:</span>
+                        <span id="payment-total">$0.00</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="button payment__button">
+                    <span id="payment-button-text">Pay Now</span>
+                    <div class="payment__spinner hidden" id="payment-spinner"></div>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Success Modal -->
+    <div class="success" id="success">
+        <div class="success__container">
+            <div class="success__icon">
+                <i class="bx bx-check-circle"></i>
+            </div>
+            <h2 class="success__title">Payment Successful!</h2>
+            <p class="success__description">Thank you for your purchase. Your order has been placed and will be shipped within 2 business days.</p>
+            <button class="button success__button" id="success-button">Continue Shopping</button>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
